@@ -526,14 +526,6 @@
     }
   });
 
-  // Spacebar to pause/play
-  document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') {
-      e.preventDefault();
-      pauseBtn.click();
-    }
-  });
-
   function getRandomColor() {
     const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
     return colors[Math.floor(Math.random() * colors.length)];
@@ -565,7 +557,7 @@
       emoji.style.left = Math.random() * 100 + 'vw';
       emoji.style.color = getRandomColor();
       document.body.appendChild(emoji);
-      setTimeout(() => emoji.remove(), 5000);
+      setTimeout(() => emoji.remove(), 6000);
     }
   }, 3000);
 </script>
