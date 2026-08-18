@@ -526,14 +526,6 @@
     }
   });
 
-  // Spacebar to pause/play
-  document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') {
-      e.preventDefault();
-      pauseBtn.click();
-    }
-  });
-
   function getRandomColor() {
     const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
     return colors[Math.floor(Math.random() * colors.length)];
